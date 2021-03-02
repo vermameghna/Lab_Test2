@@ -1,0 +1,18 @@
+package com.customerapp.controller;
+
+import com.customerapp.dao.Customer;
+import com.customerapp.service.CustomerService;
+import com.customerapp.service.CustomerServiceImpl;
+
+public class CutomerAppTester {
+	public static void main(String[] args) {
+	   CustomerService customerService = new CustomerServiceImpl();
+	   
+	   Customer customer1 = new Customer("Meghna", "Hisar", "39847984");
+	   Customer customer2 = new Customer("Umesh", "Delhi", "39847984");
+	   Customer customer3 = new Customer("Meghna", "Hisar", "39847984");
+	   Customer customer4 = new Customer("Meghna", "Hisar", "39847984");
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.customerapp.service;
+
+import java.util.List;
+
+import com.productcart.productdao.Product;
+
+public interface CustomerService {
+	public List<Customer> showAllProducts();
+	public void addCustomer(Customer customer);
+	public Customer getCustomerById(int id);
+}

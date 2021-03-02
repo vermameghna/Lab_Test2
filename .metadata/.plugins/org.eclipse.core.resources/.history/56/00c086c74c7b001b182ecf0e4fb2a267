@@ -1,0 +1,15 @@
+package com.customerapp.controller;
+
+import com.customerapp.dao.Customer;
+import com.customerapp.service.CustomerService;
+import com.customerapp.service.CustomerServiceImpl;
+
+public class CutomerAppTester {
+	public static void main(String[] args) {
+	   CustomerService customerService = new CustomerServiceImpl();
+	   
+	   Customer customer = new Customer("Meghna", "Hisar", "39847984");
+		
+		
+	}
+}

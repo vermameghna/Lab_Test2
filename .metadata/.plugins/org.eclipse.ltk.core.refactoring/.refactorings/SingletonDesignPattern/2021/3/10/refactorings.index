@@ -1,0 +1,13 @@
+1614689662517	Rename package 'Controller'
+1614689673805	Rename package 'Exceptions'
+1614689702575	Rename package 'GPPImplementation'
+1614689763763	Rename type 'Main'
+1614690002043	Delete element
+1614690181876	Rename type 'StaticBlockInitializationClass'
+1614690198909	Rename type 'ThreadSafeClass'
+1614690207295	Rename type 'ThreadSafe'
+1614690230813	Rename type 'StaticBlockInitialization'
+1614690244199	Rename type 'ReflectionDestroyClass'
+1614690347012	Rename type 'LazyInitializationClass'
+1614690418362	Rename type 'EagerInitializationClass'
+1614690444345	Rename package 'com.demo.gppImpl'

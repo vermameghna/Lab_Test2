@@ -1,0 +1,65 @@
+package com.customerapp.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.customerapp.connections.ConnectionFactory;
+import com.customerapp.exceptions.DataAccessException;
+
+public class CustomerDaoImpl implements CustomerDao{
+	
+	private Connection connection;
+	
+	public CustomerDaoImpl() {
+		connection = ConnectionFactory.getConnection();
+	}
+
+	
+	@Override
+	public void addCustomer(Customer customer) {
+		
+		try {
+			PreparedStatement pstmt = connection.prepareStatement("insert into CustApp(name,address,phone) values(?,?,?)");
+			pstmt.setString(1, customer.getName());
+			pstmt.setString(2, customer.getAddress());
+			pstmt.setString(3, customer.getPhone());
+			pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			throw new DataAccessException(e.getCause().getMessage());
+		}
+	}
+
+	@Override
+	public Customer getCustomerById(int id) {
+		Customer tempCustomer = null;
+		try {
+			
+			PreparedStatement pstmt = connection.prepareStatement("select * from CustApp where id=?");
+			pstmt.setInt(1, id);
+			ResultSet rs = pstmt.executeQuery();
+			System.out.println("Get Customer by ID-----------------------");
+			
+			if(rs.next()) {
+				tempCustomer = new Customer(rs.getInt("id"),
+						rs.getString("name"), 
+						rs.getString("address"), 
+						rs.getString("phone"));
+			}
+			
+			if(tempCustomer != null) {
+				return tempCustomer;
+			}else {
+				throw new DataAccessException("Customer of" + id + " not found");
+			}
+			
+			
+		} catch (SQLException e) {
+			throw new DataAccessException(e.getCause().getMessage());
+		}
+	}
+	
+	
+}

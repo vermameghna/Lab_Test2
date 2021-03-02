@@ -1,0 +1,5 @@
+package com.customerapp.service;
+
+public class CustomerServiceImpl implements CustomerService{
+
+}

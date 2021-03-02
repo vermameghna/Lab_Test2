@@ -1,0 +1,11 @@
+package com.customerapp.dao;
+
+import java.util.List;
+
+public interface ProductDao {
+	public List<Customer> showAllProducts();
+	public void addProduct(Customer product);
+	public void deleteProduct(int id);
+	public void updateProduct(Customer product);
+	public Customer getProductById(int id);
+}

@@ -1,0 +1,9 @@
+package com.customerapp.dao;
+
+import java.util.List;
+
+public interface CutomerDao {
+	public List<Customer> showAllCustomers();
+	public void addCustomer(Customer customer);
+	public Customer getCustomerById(int id);
+}

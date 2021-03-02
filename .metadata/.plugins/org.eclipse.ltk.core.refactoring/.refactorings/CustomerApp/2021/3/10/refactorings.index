@@ -1,0 +1,12 @@
+1614683740213	Delete element
+1614683764177	Rename package 'com.productcart.productdao'
+1614683816624	Rename type 'Product'
+1614683826559	Rename type 'ProductDao'
+1614683837573	Rename type 'ProductDaoImpl'
+1614684811602	Rename package 'com.productcart.dao'
+1614684838886	Rename package 'com.productcart.exceptions'
+1614684859015	Move compilation unit
+1614685002659	Delete element
+1614685118723	Rename type 'CutomerDao'
+1614686680674	Delete element
+1614686849845	Delete element

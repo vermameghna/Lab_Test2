@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.customerapp.dao.CustomerDaoImpl"/>
+<fullyQualifiedTypeName name="com.customerapp.service.CustomerService"/>
+<fullyQualifiedTypeName name="com.customerapp.service.CustomerServiceImpl"/>
+<fullyQualifiedTypeName name="com.customerapp.dao.Customer"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.demo.goodprogpractice.StaticBlockInitializationSingleton"/>
+<fullyQualifiedTypeName name="com.demo.goodprogpractice.LazyInitializationSingleton"/>
+<fullyQualifiedTypeName name="com.demo.goodprogpractice.ThreadSafeSingleton"/>
+<fullyQualifiedTypeName name="com.demo.goodprogpractice.SerializedIssueClass"/>
+</qualifiedTypeNameHistroy>

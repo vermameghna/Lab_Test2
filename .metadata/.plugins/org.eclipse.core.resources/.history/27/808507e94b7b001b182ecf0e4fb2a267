@@ -1,0 +1,19 @@
+package com.customerapp.service;
+
+import com.customerapp.dao.Customer;
+
+public class CustomerServiceImpl implements CustomerService{
+
+	@Override
+	public void addCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Customer getCustomerById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
